@@ -1,0 +1,215 @@
+/* styles.css */
+
+/* Reset styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto;
+  /* Align the logo to the left */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add transition for smooth color change */
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  color: #fff;
+  /* Change text color on hover */
+}
+
+.nav-links a.active {
+  background-color: #443f89;
+  font-weight: bold;
+}
+
+.logout-button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #eee;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: darkcyan;
+  width: 200px;
+  padding: 1rem;
+  position: fixed;
+  top: 58px;
+  left: 0;
+  height: 242%;
+}
+
+
+
+
+.sidebar-links {
+  list-style: none;
+}
+
+.sidebar-links li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-links a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add transition for smooth color change */
+}
+
+.sidebar-links a:hover {
+  background-color: #555;
+  color: #fff;
+  /* Change text color on hover */
+}
+
+.sidebar-links a.active {
+  background-color: #555;
+  color: #fff;
+}
+
+/* Content */
+.content {
+  flex-grow: 1;
+  padding: 1rem;
+  margin-left: 250px;
+  /* Use margin-left instead of margin-right */
+  width: calc(100% - 250px);
+  /* Subtract the sidebar width from the total width */
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
+
+/* TimerButton */
+.timer-button {
+  background-color: pink;
+  color: black;
+  font-size: large;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timer-button:hover {
+  background-color: deeppink;
+  border-radius: 0.5rem;
+}
+
+.timer-value {
+  margin-left: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0.5rem;
+    position: static;
+    top: 0;
+    order: 0;
+    /* Reset the order property for mobile view */
+    margin-left: 0;
+    /* Reset the margin */
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .timer-button {
+    margin-top: 0.5rem;
+  }
+}

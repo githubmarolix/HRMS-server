@@ -1,0 +1,138 @@
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.recruitment-button {
+  padding: 10px 20px;
+  margin: 10px;
+  color: yellowgreen;
+  background-color: #d32727;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+}
+
+.recruitment-button:hover {
+  background-color: rgb(47, 255, 245);
+  color: tomato;
+}
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.job-form label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.job-form input,
+.job-form textarea {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.job-form textarea {
+  height: 150px;
+}
+
+.job-form button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #d32727;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 180px;
+}
+
+.job-form button:hover {
+  background-color: blueviolet;
+  color: tomato;
+}
+
+/* Recruitment.css */
+
+/* Styles for the job-list container */
+.job-list {
+  margin-top: 20px;
+}
+
+/* Styles for the job table */
+.job-table {
+  margin-top: 400px;
+  width: 95%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-right: 770px;
+  bottom: 50px;
+}
+
+/* Styles for table header */
+.job-table thead {
+  background-color: #f2f2f2;
+}
+
+.job-table th {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Styles for table body */
+.job-table td {
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+.job-table .job-item:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Column styles */
+.job-table .designation-column {
+  width: 30%;
+}
+
+.job-table .responsibilities-column {
+  width: 40%;
+}
+
+.job-table .qualifications-column {
+  width: 20%;
+}
+
+.job-table .experience-column {
+  width: 170px;
+}
+
+.job-table .date-column {
+  width: 10%; /* Increased width for Date Of Posting column */
+}
+
+/* Remove right border for last cell in each row */
+.job-table .job-item td:last-child {
+  border-right: none;
+}
+
+.AppPageLink{
+  border-radius: 3.5rem;
+}
+
+
+
